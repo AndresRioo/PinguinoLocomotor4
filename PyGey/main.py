@@ -18,7 +18,7 @@ def rectangulo(width,height):
 
 
 def pinguinoCrear(startx,starty):
-    pinguino = pygame.image.load(r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pingu.png")
+    pinguino = pygame.image.load(r"fotosPython\pingu.png")
     #pinguino = pygame.image.load(r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinguion.png")
     pinguino = pygame.transform.flip( pinguino, False, True)  #invertir la imagen (que mire a la derecha y no izquierda)
     pinguino = pygame.transform.rotate(pinguino, 180)
@@ -43,7 +43,7 @@ def sueloNormal(width, height , posicionx, posiciony ,imagen):
     #La imagen elige la imagen
 
     #0 la verde , 1 la azul, 2 la rosa , 3 pincho azul, 4 pincho rosa
-    urlList = [r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\bloque basico.png" , r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\SueloAzul.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\SueloRosa.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinchoAzul.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinchoRosa.png" ]
+    urlList = [r"fotosPython\bloque basico.png" , r"fotosPython\SueloAzul.png", r"fotosPython\SueloRosa.png", r"fotosPython\pinchoAzul.png", r"fotosPython\pinchoRosa.png" ]
 
     # SUELO
     # Configuración del suelo
@@ -78,7 +78,7 @@ def sueloRaya(width, height,posicionx,posiciony,imagen):
     #La imagen elige la imagen
 
     # 0 la verde (no deberia) , 1 suelo azul a rayas, 2 suelo rosa a rayas 3 pincho azul raya, 4 pincho rosa raya, 5 pincho azul normal 6 pincho rosa normal
-    urlList = [KeyError,r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\sueloAzulnt.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\sueloRojont.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinchoAzulnt.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinchoRojont.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pincho.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pincho rojo normal.png"]
+    urlList = [KeyError,r"fotosPython\sueloAzulnt.png", r"fotosPython\sueloRojont.png", r"fotosPython\pinchoAzulnt.png", r"fotosPython\pinchoRojont.png", r"fotosPython\pincho.png", r"fotosPython\pincho rojo normal.png"]
 
     # SUELO
     # Configuración del suelo
@@ -113,7 +113,7 @@ def Pinchos(width, height,posicionx,posiciony,imagen,rotacion):
     # url + escala
 
     # 0 pincho azul raya, 1 pincho rosa raya, 2 pincho azul normal 3 pincho rosa normal
-    urlList = [ r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinchoAzulnt.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinchoRojont.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pincho.png", r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pincho rojo normal.png"]
+    urlList = [ r"fotosPython\pinchoAzulnt.png", r"fotosPython\pinchoRojont.png", r"fotosPython\pincho.png", r"fotosPython\pincho rojo normal.png"]
     
     # SUELO
     # Configuración del suelo
@@ -148,7 +148,7 @@ def ObjetosRandom(width, height,posicionx,posiciony,imagen):
     # url + escala
 
     # 0 de salir , 1 de sexo png , 2 de UB , 3 de empezar 
-    urlList = [ (r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\salir.png", 2 ) , (r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\sexo.png", 2), (r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\dale a la v.png",4), (r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\empezar.png",2) ]
+    urlList = [ (r"fotosPython\salir.png", 2 ) , (r"fotosPython\sexo.png", 2), (r"fotosPython\dale a la v.png",4), (r"fotosPython\empezar.png",2) ]
 
     # SUELO
     # Configuración del suelo
@@ -221,60 +221,60 @@ def Bloques(width, height , posicionx, posiciony , tipo , estado=None , rotacion
     
     if tipo == "BloqueVerde":
 
-        imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\bloque basico.png"
+        imagen = r"fotosPython\bloque basico.png"
         escala = 0.10
     
     if tipo == "PinchoVerde":
 
-        imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pincho verde.png"
+        imagen = r"fotosPython\pincho verde.png"
         escala = 0.50
 
     if tipo == "BloqueAzul":
 
         if estado == 1:
 
-            imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\SueloAzul.png"
+            imagen = r"fotosPython\SueloAzul.png"
             escala = 0.10
 
         elif estado == 0:
 
-            imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\sueloAzulnt.png"
+            imagen = r"fotosPython\sueloAzulnt.png"
             escala = 0.50
     
     if tipo == "BloqueRosa":
 
         if estado == 1:
 
-            imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\SueloRosa.png"
+            imagen = r"fotosPython\SueloRosa.png"
             escala = 0.10
 
         elif estado == 0:
 
-            imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\sueloRojont.png"
+            imagen = r"fotosPython\sueloRojont.png"
             escala = 0.50
     
     if tipo == "PinchoAzul":
 
         if estado == 1:
 
-            imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pincho.png"
+            imagen = r"fotosPython\pincho.png"
             escala = 0.50
 
         elif estado == 0:
 
-            imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinchoAzulnt.png"
+            imagen = r"fotosPython\pinchoAzulnt.png"
             escala = 0.50
     
     if tipo == "PinchoRosa":
 
         if estado == 1:
 
-            imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pincho rojo normal.png"
+            imagen = r"fotosPython\pincho rojo normal.png"
             escala = 0.50
 
         elif estado == 0:
 
-            imagen = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinchoRojont.png"
+            imagen = r"fotosPython\pinchoRojont.png"
             escala = 0.50
 
 
@@ -338,7 +338,7 @@ def MENU():
 
 
     # Cargar imagen de fondo
-    fondo = pygame.image.load(r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\frames\frame 1\frame 1 negro.bmp")
+    fondo = pygame.image.load(r"fotosPython\frames\frame 1\frame 1 negro.bmp")
     #fondo = pygame.transform.scale(fondo, (width, height))
 
 
@@ -348,13 +348,13 @@ def MENU():
 
     #PUNTUACION MAXIMA
 
-    font_path = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\Comic Sans MS.ttf"
+    font_path = r"fotosPython\Comic Sans MS.ttf"  #COMIC SANS SIUUUUUUUUUUUUUUU (hola)
     # Definir el tamaño de la fuente
     font_size = 36
     #Cargar la fuente TrueType
     font = pygame.font.Font(font_path, font_size)
 
-    with open(r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\score.txt.txt", 'r+') as file:
+    with open(r"fotosPython\score.txt.txt", 'r+') as file:
                 # Lee todo el contenido del archivo en una cadena
                 contenido = file.read()
                 contenido = int(contenido)
@@ -1254,7 +1254,7 @@ def xd():
     window = pygame.display.set_mode((width, height))
     pygame.display.set_caption("Mi Primer Juego")
 
-    fondo = pygame.image.load(r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\xd.jpg")
+    fondo = pygame.image.load(r"fotosPython\xd.jpg")
     
     pygame.display.set_caption("vaya noob")
 
@@ -1263,7 +1263,7 @@ def xd():
 
 
     # Cargar un archivo de audio en formato OGG
-    sonido_ogg = pygame.mixer.Sound(r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\JAJAJAJA.ogg")
+    sonido_ogg = pygame.mixer.Sound(r"fotosPython\JAJAJAJA.ogg")
     volumen = 0.2  # Valor entre 0.0 (silencio) y 1.0 (volumen máximo)
     sonido_ogg.set_volume(volumen)
 
@@ -2912,7 +2912,7 @@ def mainJuego(   kiwi , kmsporHora   ):
 
 
     # Cargar imagen de fondo
-    fondo = pygame.image.load(r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\frames\frame 1\frame 1 negro.bmp")
+    fondo = pygame.image.load(r"fotosPython\frames\frame 1\frame 1 negro.bmp")
     #fondo = pygame.transform.scale(fondo, (width, height))
 
 
@@ -3036,7 +3036,7 @@ def mainJuego(   kiwi , kmsporHora   ):
     #font_path = "ruta/a/la/fuente.ttf"  # Reemplaza esto con la ruta de tu fuente TrueType
     #font_path = Fuente[fontNumber] # decepcion
 
-    font_path = r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\Comic Sans MS.ttf"
+    font_path = r"fotosPython\Comic Sans MS.ttf"
 
     # Definir el tamaño de la fuente
     font_size = 36
@@ -3179,7 +3179,7 @@ def mainJuego(   kiwi , kmsporHora   ):
 
         if boom:
 
-            with open(r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\score.txt.txt", 'r+') as file:
+            with open(r"fotosPython\score.txt.txt", 'r+') as file:
                 # Lee todo el contenido del archivo en una cadena
                 contenido = file.read()
                 contenido = int(contenido)
