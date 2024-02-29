@@ -19,7 +19,6 @@ def rectangulo(width,height):
 
 def pinguinoCrear(startx,starty):
     pinguino = pygame.image.load(r"fotosPython\pingu.png")
-    #pinguino = pygame.image.load(r"C:\Users\rioan\OneDrive\Escritorio\PyGey\.venv\fotosPython\pinguion.png")
     pinguino = pygame.transform.flip( pinguino, False, True)  #invertir la imagen (que mire a la derecha y no izquierda)
     pinguino = pygame.transform.rotate(pinguino, 180)
 
