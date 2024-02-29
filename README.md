@@ -8,6 +8,8 @@ Codigo del juego en python
 NOTAS A TENER EN CUENTA 
 
 El codigo del menu y el del propio juego son diferentes (el menu me daba palo optimizarlo)
+Hace falta descargar la libreria pygame y alguna otra.
+quico puter0
 
 COMO AÑADIR SECCIONES PERSONALIZADAS
 
